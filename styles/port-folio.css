@@ -1,0 +1,223 @@
+.open-sans-normal {
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+    }
+
+/* shared style */
+.secandary-background{
+      background-color: #FFF8F3;
+}
+.text-primary{
+      color: #FD6E0A;
+}
+
+.text-center{
+      text-align: center;
+}
+
+.dark-2{
+      color: #474747;
+}
+.dark-1{
+      color: #181818;
+}
+.btn-primary{
+      background-color: #FD6E0A;
+      font-weight: bold;
+      color: white;
+      border: none;
+      padding: 18px 37px;
+      border-radius: 5px;
+      font-size: 20px;
+}
+/* section */
+.section-title{
+      font-size: 35px;
+      font-weight: bold;
+      color: #181818;
+}
+.section-description{
+      font-size: 18px;
+      color: #757575;
+}
+/* header styles */
+.header{
+      background-image: url(../images/developer.png), url(../images/header_bg.png);
+      background-repeat: no-repeat;
+      background-position: top left , bottom right;
+}
+
+/* Nav styles */
+nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0px 200px;
+}
+.nav-title{
+      font-weight: 800;
+      font-size: 45px;
+}
+nav ul{
+      display: flex;
+      align-items: center;
+}
+nav ul li{
+      list-style: none;
+      margin-right: 51px;
+}
+nav ul li a{
+      text-decoration: none;
+      font-size: 20px;
+}
+/* banner styles */
+.banner{
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 30px 0px 200px;
+}
+.banner-content{
+      max-width: 580px;
+}
+.banner-greetings{
+      font-size: 45px;
+      font-weight: 600;
+}
+.banner-title{
+      font-weight: bold;
+      font-size: 85px;
+}
+.banner-profile-pic{
+      width: 580px;
+}
+/* main styles */
+main{
+      max-width: 1140px;
+      margin: 0px auto;
+}
+main section{
+      margin-top: 131px;
+      margin-bottom: 131px;
+}
+/* about styles */
+.about{
+      border-radius: 10px;
+      padding: 130px 150px;
+      text-align: center;
+      margin-top: 131px;
+}
+.item-description{
+      font-weight: 600;
+}
+.about-items{
+      display: flex;
+      justify-content: space-around;
+}
+/* skills style */
+.skills-containar{
+      display: flex;
+      gap: 24px;
+}
+.skill{
+      padding: 30px;
+      box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* resume section styles */
+.resume-containar{
+      display: flex;
+      gap: 24px;
+}
+.exprience-description{
+      color: #757575;
+}
+.exprience-sub-title{
+      color: #757575;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+}
+.exprience-title{
+      color: #474747;
+}
+.resume hr{
+      margin: 30px 5px;
+}
+.resume-download-cv{
+      margin-top: 50px;
+}
+/* footer styles */
+footer{
+      
+      display: flex;
+      padding: 130px 230px;
+      gap: 100px;
+}
+.footer-colum{
+      width: 50%;
+}
+footer input[type="text"],footer input[type="email"],footer textarea{
+      height: 64px;
+      border-radius: 5px;
+      background-color: white;
+      color: #footer-colum;
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      margin-bottom:24px;
+      border: none;
+      font-size: 16px
+}
+
+
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+      .skills-containar, 
+      .resume-containar, 
+      footer,
+      nav,
+      nav>ul,
+      .banner, 
+      .about-items{
+            
+            flex-direction: column;
+      }
+      nav > ul {
+            gap: 30px;
+      }
+      footer, .about{
+            padding: 20px;
+      }
+      .footer-colum{
+            width: 100%;
+      }
+      .banner{
+            margin: 20px;
+      }
+      footer input[type="text"],
+      footer input[type="email"],
+      footer textarea{
+            width: calc((100% - 40px));
+      }
+      .header{
+            background-image: none;
+      }
+      .banner-profile-pic{
+            width: 100%;
+      }
+      .btn-primary{
+            margin-bottom: 20px;
+      }
+      
+}
+/* Tablet specific media query */
+@media screen and (min-width:576px) and (max-width:990px) {
+      .banner{
+            flex-direction: column;
+      }
+}
